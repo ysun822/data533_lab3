@@ -1,6 +1,6 @@
 from __future__ import division
-from calculation.round_cal import Round
-from calculation.rectangle_cal import Rectangle
+from geometry.calculation.round_cal import Round
+from geometry.calculation.rectangle_cal import Rectangle
 import math
 
 
