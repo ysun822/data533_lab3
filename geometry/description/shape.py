@@ -1,5 +1,5 @@
-from calculation.round_cal import Round
-from calculation.rectangle_cal import Rectangle
+from geometry.calculation.round_cal import Round
+from geometry.calculation.rectangle_cal import Rectangle
 import math
 
 def round_to_square(a):
@@ -19,4 +19,3 @@ def round_to_rect(a,long_side):
     short_side = sq/long_side
     rec = Rectangle(long_side,short_side)
     return rec
-

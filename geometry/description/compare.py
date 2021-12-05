@@ -1,5 +1,5 @@
-from calculation.rectangle_cal import Rectangle
-from calculation.round_cal import Round
+from geometry.calculation.rectangle_cal import Rectangle
+from geometry.calculation.round_cal import Round
 def is_same_shape(a,b):
     if type(a)==type(b):
         return True
@@ -15,11 +15,10 @@ def is_same(a,b):
 
 def big_area(a,b):
     if a.area>b.area:
-     
+
         return a
     elif a.area<b.area:
-  
+
         return b
     print("a and b have the same area")
     return None
-        
