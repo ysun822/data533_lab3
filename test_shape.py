@@ -9,11 +9,13 @@ class TestShape(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        print("This is set up class")
+        print('\n====This is the beginning of the test for module test_shape====')
+
 
     @classmethod
     def tearDownClass(cls):
-        print("This is tear down class")
+        print('\n====This is the end of the test for module test_shape====')
+
 
     def setUp(self):
         self.a = Round(5)
@@ -22,7 +24,7 @@ class TestShape(unittest.TestCase):
         self.d = Round(5)
         self.e = Rectangle(1,2)
         self.f = Rectangle(3,4)
-        print("Run set up")
+
     def tearDown(self):
         self.a = None
         self.b = None
@@ -30,7 +32,7 @@ class TestShape(unittest.TestCase):
         self.d = None
         self.e = None
         self.f = None
-        print("Run tear down")
+
 
     def test_round_to_square(self):
 
@@ -55,5 +57,3 @@ class TestShape(unittest.TestCase):
         self.assertEqual(type(shape.round_to_rect(self.d,2)),Rectangle)
         self.assertEqual(shape.round_to_rect(self.a,2).short_len,2)
         self.assertAlmostEqual(shape.round_to_rect(self.a,4).area,25*math.pi)
-
-unittest.main(argv=[''],verbosity=2,exit=False)
